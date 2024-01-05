@@ -26,17 +26,22 @@ Before you begin, make sure you have Laravel installed on your machine.
 3. Setup the `.env` file by duplicating `.env.example`
     ```bash
     cp .env.example .env
+    php artisan key:generate
     ```
 4. Update the .env file with your database credentials and other necessary configurations.
-5. Run database migrations and seed the database
+5. Install nece
+    ```bash
+    composer install
+    ```
+6. Run database migrations and seed the database
     ```bash
     php artisan migrate:fresh --seed
     ```
-6. Start the Laravel server
+7. Start the Laravel server
     ```bash
     php artisan serve
     ```
-7. Open your browser and visit `http://localhost:{PORT}` to access the application.
+8. Open your browser and visit `http://localhost:{PORT}` to access the application.
 </br>
 </br>
 Feel free to customize the instructions based on your specific setup and requirements.
